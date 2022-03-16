@@ -28,18 +28,23 @@ namespace Containers
             newArr3.Insert(3, 4);
 
             //dynArray.FillRandom(2, 9);
-            Assert.AreEqual(newArr, newArr3);
 
             Assert.AreEqual(newArr, newArr2);
         }
         [TestMethod]
         public void TestDeleteMethod()
         {
-            var newArr = new DynArray();
-            newArr.Insert(1, 2);
-            var newArr2 = newArr;
+            var newArr = new DynArray(10);
+            var newArr2 = new DynArray(10);
+
+            newArr.FillRandom(1, 5);
+            newArr2.FillRandom(1, 5);
+
+
             newArr.Delete(2);
-            Assert.AreEqual(newArr, newArr2);
+            Assert.AreEqual(newArr.GetLength(), newArr2.GetLength());
+
+
 
         }
     }
