@@ -63,5 +63,20 @@ namespace Containers
 
 
         }
+        [TestMethod]
+        public void TestPushBackMethod()
+        {
+            var newArr = new DynArray();
+            
+
+            
+
+
+            newArr.PushBack(2);
+            Assert.AreEqual(newArr, 2);
+
+
+
+        }
     }
 }
