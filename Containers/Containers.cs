@@ -23,6 +23,11 @@ namespace Containers
             rnd = new Random();
         }
 
+        public int[] GetRawArray()
+        {
+            return arr;
+        }
+
         public int GetLength()
         {
             return Length;
