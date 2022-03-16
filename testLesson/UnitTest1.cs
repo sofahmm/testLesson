@@ -47,5 +47,21 @@ namespace Containers
 
 
         }
+        [TestMethod]
+        public void TestPopMethod()
+        {
+            var newArr = new DynArray(10);
+            var newArr2 = new DynArray(10);
+
+            newArr.FillRandom(1, 5);
+            newArr2.FillRandom(1, 5);
+
+
+            newArr.PopBack();
+            Assert.AreEqual(newArr.GetLength(),9);
+
+
+
+        }
     }
 }
